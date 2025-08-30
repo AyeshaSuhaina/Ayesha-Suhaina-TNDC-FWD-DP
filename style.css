@@ -1,0 +1,357 @@
+/* ========== Global Styles ========== */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+
+  background: #0d0d0d;
+
+  color: #e0e0e0;
+
+  line-height: 1.6;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  color: #00f7ff;
+
+}
+
+/* ========== Navbar ========== */
+
+nav {
+
+  background: #111;
+
+  color: #fff;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  position: fixed;
+
+  width: 100%;
+
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+
+}
+
+nav h1 {
+
+  font-size: 1.5rem;
+
+  background: linear-gradient(45deg, #ff00cc, #00ffff);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+nav ul {
+
+  display: flex;
+
+  list-style: none;
+
+}
+
+nav ul li {
+
+  margin-left: 20px;
+
+}
+
+nav ul li a {
+
+  color: #fff;
+
+  transition: 0.3s;
+
+}
+
+nav ul li a:hover {
+
+  color: #ff00cc;
+
+}
+
+/* ========== Sections ========== */
+
+section {
+
+  padding: 100px 50px;
+
+  min-height: 100vh;
+
+}
+
+/* Home Section with Aurora Gradient */
+
+#home {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  text-align: center;
+
+  color: #fff;
+
+  background: linear-gradient(
+
+    120deg,
+
+    #000000,
+
+    #4b0082,
+
+    #000080,
+
+    #1e90ff,
+
+    #4b0082,
+
+    #000000,
+
+    #4b0082
+
+  );
+
+  background-size: 400% 400%;
+
+  animation: auroraMove 18s ease infinite;
+
+}
+
+@keyframes auroraMove {
+
+  0%   { background-position: 0% 50%; }
+
+  50%  { background-position: 100% 50%; }
+
+  100% { background-position: 0% 50%; }
+
+}
+
+#home h2 { font-size: 2.5rem; }
+
+.highlight { color: #ffdf6c; }
+
+#about, #skills, #projects, #contact {
+
+  background: #1a1a1a;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  padding: 50px;
+
+  box-shadow: 0px 5px 20px rgba(255,0,255,0.2);
+
+}
+
+#about h2, #skills h2, #projects h2, #contact h2 {
+
+  background: linear-gradient(45deg, #ff00cc, #00ffff);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+#skills ul {
+
+  list-style: none;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
+
+#skills ul li {
+
+  background: linear-gradient(45deg, #ff00cc, #00ffff);
+
+  color: #fff;
+
+  margin: 5px;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+
+  box-shadow: 0 0 10px rgba(0,255,255,0.4);
+
+}
+
+.project {
+
+  margin-bottom: 20px;
+
+  border: 1px solid #333;
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  transition: 0.3s;
+
+  background: #111;
+
+  box-shadow: 0 0 10px rgba(255,0,255,0.2);
+
+}
+
+.project:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 20px rgba(0,255,255,0.6);
+
+}
+
+/* Contact Form */
+
+form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+}
+
+input, textarea {
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  border: none;
+
+  outline: none;
+
+}
+
+.btn {
+
+  background: linear-gradient(45deg, #ff00cc, #00ffff);
+
+  border: none;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px rgba(0,255,255,0.4);
+
+}
+
+.btn:hover { opacity: 0.9; }
+
+#preview {
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  background: rgba(255,255,255,0.05);
+
+  border-radius: 8px;
+
+}
+
+.hidden { display: none; }
+
+/* Glow effect for button */
+
+.glow {
+
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00cc;
+
+}
+
+/* Footer */
+
+footer {
+
+  background: #111;
+
+  color: #fff;
+
+  text-align: center;
+
+  padding: 15px;
+
+  border-top: 1px solid #333;
+
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+
+  nav ul {
+
+    flex-direction: column;
+
+    position: absolute;
+
+    top: 60px;
+
+    right: 0;
+
+    background: #111;
+
+    width: 200px;
+
+    display: none;
+
+  }
+
+  nav ul.active { display: flex; }
+
+  nav .menu-toggle { display: block; cursor: pointer; }
+
+}
+
+.menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; }

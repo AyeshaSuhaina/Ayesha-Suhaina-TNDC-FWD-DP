@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav>
+
+    <h1>MyPortfolio</h1>
+
+    <span class="menu-toggle">☰</span>
+
+    <ul>
+
+      <li><a href="#home">Home</a></li>
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#skills">Skills</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Home -->
+
+  <section id="home">
+
+    <h2>Hello, I'm <span class="highlight">Ayesha Suhaina</span></h2>
+
+    <p>Aspiring Web Developer | Student | Designer</p>
+
+  </section>
+
+  <!-- About -->
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+
+      I am a passionate student learning web development and design.
+
+      Now,I am improving my skills in HTML, CSS, and JavaScript.  I enjoy working on simple projects and exploring new technologies.
+      
+      
+      
+
+My goal is to grow my knowledge step by step and become confident in building useful applications.
+
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+
+<section id="skills">
+
+  <h2>My Skills</h2>
+
+  
+
+  <div class="skill">
+
+    <h3>HTML</h3>
+
+    <ul>
+
+      <li>Can build structured, semantic web pages.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="skill">
+
+    <h3>CSS</h3>
+
+    <ul>
+
+      <li>Styling pages with modern layouts.Creating animations, hover effects, and transitions.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="skill">
+
+    <h3>JavaScript</h3>
+
+    <ul>
+
+      <li>Interactive forms, input validation, dynamic content.</li>
+
+    </ul>
+
+  </div>
+
+  <div class="skill">
+
+    <h3>Python</h3>
+
+    <ul>
+
+      <li>Familiar with data structures and algorithms.</li>
+
+    </ul>
+
+  </div>
+
+</section>    
+
+    
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project">
+
+      <h3>Portfolio Website</h3>
+
+      <p>A responsive digital portfolio built with HTML, CSS, and JS.</p>
+
+    </div>
+
+    
+    <div class="project">
+
+  <h3>To-Do List App</h3>
+
+  <p>
+
+    A simple <strong>JavaScript</strong> application to manage daily tasks.  
+
+    Features adding, deleting, and marking tasks as completed.    
+
+</div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+      <label>Name:</label>
+
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+
+      <input type="email" id="email" required>
+
+      <label>Message:</label>
+
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+
+    </form>
+
+    <div id="preview" class="hidden">
+
+      <h3>Message Preview</h3>
+
+      <p><strong>Name:</strong> <span id="prevName"></span></p>
+
+      <p><strong>Email:</strong> <span id="prevEmail"></span></p>
+
+      <p><strong>Message:</strong> <span id="prevMessage"></span></p>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>&copy; <span id="year"></span> Student portfolio | All Rights Reserved</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
